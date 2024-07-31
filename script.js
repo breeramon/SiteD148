@@ -25,12 +25,3 @@ function updateHistory(result, sides) {
     listItem.innerText = `D${sides}: ${result}`;
     historyList.insertBefore(listItem, historyList.firstChild);
 }
-
-darkModeToggle.addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-    if (document.body.classList.contains('dark-mode')) {
-        darkModeToggle.innerText = 'Modo Claro';
-    } else {
-        darkModeToggle.innerText = 'Modo Escuro';
-    }
-});
